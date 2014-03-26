@@ -8,14 +8,16 @@ configuration = {
     :missing_medium =>  '/assets/icon_missing_medium.jpg',
     :paperclip_options => {
       :styles => {
-        :thumb => {
-          :geometry =>  "100x100#",
-        },
+        :thumb => "100x100#",
         :medium =>  "290x320#",
         :large =>  "664>",
       },
       :storage =>  :s3,
-      :s3_credentials => Rails.root.join('config', 's3.yml').to_s,
+      :s3_credentials => {
+        :access_key_id => ENV["S3_KEY"],
+        :secret_access_key => ENV["S3_SECRET"]
+      }
+      :bucket => ENV['S3_BUCKET'],
       :path => ":attachment/:id_:style.:extension"
     },
     :validation_options => {
