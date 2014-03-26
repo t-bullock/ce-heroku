@@ -15,7 +15,7 @@ configuration = {
         :large =>  "664>",
       },
       :storage =>  :s3,
-      :s3_credentials => Rails.root.join('config', 's3.yml'),
+      :s3_credentials => Rails.root.join('config', 's3.yml').to_s,
       :path => ":attachment/:id_:style.:extension"
     },
     :validation_options => {
