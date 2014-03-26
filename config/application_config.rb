@@ -4,8 +4,8 @@ configuration = {
   :community_tagline =>  "Open Source Social Networking Platform",
 
   :photo => {
-    :missing_thumb =>  '/assets/icon_missing_thumb.jpg',
-    :missing_medium =>  '/assets/icon_missing_medium.jpg',
+    :missing_thumb =>  '/assets/icon_missing_thumb.gif',
+    :missing_medium =>  '/assets/icon_missing_medium.gif',
     :paperclip_options => {
       :styles => {
         :thumb => "100x100#",
