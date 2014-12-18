@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
-gem 'community_engine',  :git => "https://github.com/bborn/communityengine.git", :branch => "rails4"
+gem 'community_engine',  :git => "https://github.com/bborn/communityengine.git"
 gem 'rails_12factor'
 
 group :development do
